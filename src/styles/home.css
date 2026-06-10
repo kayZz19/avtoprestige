@@ -1,0 +1,1088 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 6px;
+}
+
+.header {
+  width: 100%;
+  padding: 40px 12px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: var(--orange-color);
+}
+
+.menu-btn {
+  padding: 6px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--orange-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  width: 109px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.phones a {
+  font-family: var(--text-fonts), sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #333333;
+}
+
+.nav-link {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--orange-color);
+}
+
+.big_letter {
+  font-family: var(--title-fonts), sans-serif;
+  color: #333333;
+  font-size: 122px;
+  position: absolute;
+  line-height: 80px;
+}
+
+.icon_motorcycle {
+  width: 152px;
+  height: 152px;
+  object-fit: contain;
+  z-index: 1;
+  transform: translateY(42px);
+}
+
+.icon_avto {
+  width: 152px;
+  height: 152px;
+  object-fit: contain;
+  z-index: 1;
+  transform: translateY(56px);
+}
+
+.sectionCategories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cardsCategories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+
+.cardsCategories-B {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+
+.photoCategories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.categoriaA-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.category-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--title-fonts);
+  font-size: 20px;
+}
+
+.category-card__title {
+  font-size: 20px;
+  font-family: var(--title-fonts);
+}
+
+.category-card__title_span {
+  font-size: 20px;
+  font-family: var(--title-fonts);
+  color: #ffb81c;
+}
+
+.category-card__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.category-card__column-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 160px;
+}
+
+.category-card__column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  max-width: 174px;
+}
+
+.category-card__text {
+  font-size: 14px;
+  text-align: end;
+  font-family: var(--text-fonts);
+}
+
+.category-card__text--right {
+  text-align: left;
+}
+
+.category-card__divider {
+  width: 9px;
+  height: 92px;
+  border-radius: 999px;
+  background: #656565;
+}
+
+.guard-training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+
+.guard-training__image {
+  width: 152px;
+}
+
+.guard-training__title {
+  text-align: center;
+  font-size: 20px;
+  font-family: var(--title-fonts);
+}
+
+.guard-training__title span {
+  color: #f5b31b;
+}
+
+.guard-training__cards {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+
+.guard-card {
+  max-width: 169px;
+  background: #d9d9d9;
+  border-radius: 20px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.guard-card__text {
+  text-align: center;
+  font-size: 14px;
+  font-family: var(--text-fonts);
+}
+
+.guard-card__line {
+  width: 100%;
+  height: 2px;
+  background: #222;
+}
+
+.body_sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.body_title {
+  font-family: var(--title-fonts), sans-serif;
+  font-size: 20px;
+  max-width: 328px;
+  text-align: center;
+}
+
+.body_title span {
+  color: var(--orange-color);
+}
+
+.advantages-wrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  overflow-y: auto;
+  background-color: var(--orange-color);
+  border-radius: 24px;
+  box-shadow: 0 4px 40px #ffb81c;
+  scrollbar-width: thin;
+}
+
+.advantages-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.advantages-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.advantage-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.advantage-icon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.advantage-card h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  max-width: 212px;
+}
+.advantage-card p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  max-width: 130px;
+}
+
+.advantages-wrapper {
+  position: relative;
+  min-width: 300px;
+  max-height: 700px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  overflow-y: auto;
+  background-color: var(--orange-color);
+  border-radius: 24px;
+  box-shadow: 0 4px 40px #ffb81c;
+  scrollbar-width: none;
+}
+
+.advantages-wrapper::after {
+  content: "↓";
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  pointer-events: none;
+  animation: scrollHint 1.2s infinite ease-in-out;
+}
+
+@keyframes scrollHint {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.grafic_cards {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+.grafic_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  box-shadow: 0 4px 4px #bebebe;
+  border-radius: 5px;
+  font-family: var(--text-fonts);
+}
+
+.grafic_items_SS {
+  background-color: var(--orange-color);
+}
+
+.contacts_map {
+  width: 423px;
+  height: 193px;
+  object-fit: contain;
+  box-shadow: 0 4px 4px 5px #c9c9c9;
+}
+
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contacts-info {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 1fr;
+  font-family: var(--text-fonts), sans-serif;
+  font-size: 8px;
+  gap: 5px;
+  padding: 28px 5px;
+  transform: translateY(-15px);
+  z-index: 1;
+  background-color: #fff;
+  max-width: 413px;
+}
+
+.contacts_icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.contact-text {
+  text-decoration: none;
+}
+
+
+.faq-item {
+  width: 100%;
+  max-width: 390px;
+
+  background: #d9d9d9;
+  border-radius: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 24px;
+  gap: 20px;
+
+  cursor: pointer;
+}
+
+.faq-title {
+  flex: 1;
+
+  font-family: var(--text-fonts);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.faq-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+
+  transition: transform 0.3s ease;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
+
+  font-family: var(--text-fonts);
+  font-size: 14px;
+  line-height: 1.6;
+
+  padding: 0 24px;
+}
+
+.faq-item.active {
+  background: var(--orange-color);
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-item.active .faq-content {
+  max-height: 400px;
+  padding: 0 24px 24px;
+}
+
+
+
+@media (min-width: 768px) {
+  .page {
+    padding: 0 20px;
+  }
+
+  .main {
+    gap: 60px;
+  }
+
+  .header {
+    padding: 40px 20px 20px;
+  }
+
+  .logo img {
+    width: 170px;
+  }
+
+  .phones a {
+    font-size: 16px;
+  }
+
+  .phone-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  /* Категории */
+
+  .sectionCategories {
+    gap: 50px;
+  }
+
+  .cardsCategories,
+  .cardsCategories-B {
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .category-card__content {
+    gap: 40px;
+  }
+
+  .category-card__text {
+    font-size: 18px;
+  }
+
+  .category-card__divider {
+    height: 130px;
+  }
+
+  .big_letter {
+    font-size: 180px;
+    line-height: 140px;
+  }
+
+  .icon_motorcycle,
+  .icon_avto {
+    width: 250px;
+    height: 250px;
+  }
+
+  .guard-training__cards {
+    gap: 40px;
+  }
+
+  .guard-card {
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .guard-card__text {
+    font-size: 18px;
+  }
+
+  /* Преимущества */
+
+  .advantages-wrapper {
+    width: 100%;
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 40px;
+
+    gap: 40px;
+  }
+
+  .advantages-wrapper::after {
+    display: none;
+  }
+
+  .advantage-card {
+    width: 100%;
+  }
+
+  .advantage-card h3 {
+    font-size: 24px;
+  }
+
+  .advantage-card p {
+    font-size: 18px;
+    max-width: none;
+  }
+
+  /* Контакты */
+
+  .grafic_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grafic_items {
+    width: 180px;
+    font-size: 18px;
+  }
+
+  .contacts_map {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+
+  .contacts-info {
+    width: 100%;
+    max-width: 860px;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  /* FAQ */
+
+  .faq-item {
+    max-width: 900px;
+  }
+
+  .faq-title {
+    font-size: 22px;
+  }
+
+  .faq-content {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .main {
+    gap: 70px;
+  }
+
+  .logo img {
+    width: 220px;
+  }
+
+  .nav {
+    gap: 70px;
+  }
+
+  .big_letter {
+    font-size: 320px;
+    line-height: 240px;
+  }
+
+  .icon_motorcycle,
+  .icon_avto {
+    width: 320px;
+    height: 320px;
+  }
+
+  .category-card__title,
+  .category-card__title_span {
+    font-size: 28px;
+  }
+
+  .category-card__text {
+    font-size: 18px;
+  }
+
+  .advantages-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+  }
+
+  .grafic_cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .contacts-info {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .page {
+    padding: 0;
+  }
+
+  .main {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    gap: 90px;
+
+    padding-bottom: 80px;
+  }
+
+  .header {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    padding: 40px 0;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+
+  .menu-btn {
+    padding: 10px;
+  }
+
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .phones a {
+    font-size: 16px;
+  }
+
+  .nav {
+    padding: 14px 30px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .cardsCategories,
+  .cardsCategories-B {
+    width: 100%;
+
+    display: grid;
+
+    align-items: center;
+
+    gap: 80px;
+  }
+
+  .cardsCategories {
+    grid-template-columns: 520px 1fr;
+  }
+
+  .cardsCategories-B {
+    grid-template-columns: 1fr 520px;
+  }
+
+  .cardsCategories-B .photoCategories {
+    order: 2;
+  }
+
+  .cardsCategories-B .categoriaA-info {
+    order: 1;
+  }
+
+  .photoCategories {
+    width: 520px;
+  }
+
+  .big_letter {
+    font-size: 420px;
+    line-height: 320px;
+  }
+
+  .icon_motorcycle,
+  .icon_avto {
+    width: 380px;
+    height: 380px;
+  }
+
+  .categoriaA-info {
+    width: 100%;
+    padding: 40px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.06),
+      0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .category-card__title,
+  .category-card__title_span {
+    font-size: 34px;
+  }
+
+  .category-card__content {
+    gap: 50px;
+  }
+
+  .category-card__column-left,
+  .category-card__column-right {
+    max-width: 260px;
+  }
+
+  .category-card__text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .category-card__divider {
+    height: 150px;
+  }
+
+  .guard-training {
+    gap: 35px;
+  }
+
+  .guard-training__image {
+    width: 300px;
+  }
+
+  .guard-training__title {
+    font-size: 36px;
+  }
+
+  .guard-training__cards {
+    gap: 120px;
+  }
+
+  .guard-card {
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .guard-card__text {
+    font-size: 18px;
+  }
+
+  .body_title {
+    font-size: 38px;
+  }
+
+  .advantages-wrapper {
+    max-width: 1300px;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 50px;
+  }
+
+  .advantage-card {
+    min-height: 250px;
+
+    border-radius: 18px;
+
+    transition: all 0.3s ease;
+  }
+
+  .advantage-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .advantage-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .advantage-card h3 {
+    font-size: 22px;
+  }
+
+  .advantage-card p {
+    font-size: 16px;
+  }
+
+  .grafic_cards {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .grafic_items {
+    min-height: 90px;
+    font-size: 16px;
+  }
+
+  .contacts_map {
+    max-width: 1200px;
+  }
+
+  .contacts-info {
+    width: 100%;
+    max-width: 1200px;
+
+    font-size: 14px;
+
+    gap: 30px;
+
+    padding: 30px;
+  }
+
+  .contacts_icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .faq-item {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .faq-title {
+    font-size: 24px;
+  }
+
+  .faq-content {
+    max-width: none;
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 1920px) {
+  .main,
+  .header {
+    max-width: 1600px;
+  }
+
+  .big_letter {
+    font-size: 500px;
+  }
+
+  .icon_motorcycle,
+  .icon_avto {
+    width: 450px;
+    height: 450px;
+  }
+
+  .body_title {
+    font-size: 44px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  #questions {
+    width: 100%;
+    align-items: center;
+  }
+
+  .faq-item {
+    max-width: 850px;
+  }
+
+  .faq-title {
+    font-size: 24px;
+  }
+
+  .faq-content {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  #questions {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    max-width: 1200px;
+    border-radius: 20px;
+  }
+
+  .faq-header {
+    padding: 28px 40px;
+  }
+
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .faq-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .faq-content {
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 0 40px;
+  }
+
+  .faq-item.active .faq-content {
+    padding: 0 40px 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sectionCategories {
+    gap: 80px;
+  }
+
+  .cardsCategories,
+  .cardsCategories-B {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .category-card__header {
+    margin-bottom: 25px;
+  }
+
+  .category-card__title,
+  .category-card__title_span {
+    font-size: 42px;
+  }
+
+  .category-card__content {
+    gap: 40px;
+  }
+
+  .category-card__column-left,
+  .category-card__column-right {
+    max-width: 320px;
+    gap: 25px;
+  }
+
+  .category-card__text {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  .category-card__divider {
+    height: 180px;
+    width: 12px;
+  }
+
+  .big_letter {
+    font-size: 260px;
+    line-height: 180px;
+  }
+
+  .icon_motorcycle,
+  .icon_avto {
+    width: 300px;
+    height: 300px;
+  }
+  .cardsCategories,
+  .cardsCategories-B {
+    padding: 40px 60px;
+    border-radius: 30px;
+    background: #fafafa;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  }
+}

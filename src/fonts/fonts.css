@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("Manrope.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "drukwidecyr";
+  src: url("drukwidecyr-bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

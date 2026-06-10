@@ -1,0 +1,155 @@
+/* В этом файле уже написаны некоторые базовые стили, которые сбрасывают или преобразуют дефольное браузерное поведение.
+Здесь же лежит утилитарный класс visually-hidden на случай, если нужно скрыть какой-то элемент, но оставить доступным для скринридера.
+Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* SIDE MENU */
+
+.side-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+}
+
+.side-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.side-menu__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.side-menu__content {
+  position: relative;
+  z-index: 2;
+  width: 290px;
+  height: 100%;
+  background: #e6e6e6;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-menu__logo {
+  width: 140px;
+  object-fit: contain;
+}
+
+.side-menu__close {
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background: var(--orange-color);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-menu__close img {
+  width: 20px;
+  height: 20px;
+}
+
+.side-menu__nav {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.side-menu__nav a,
+.side-menu__documents-btn {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  font-family: var(--text-fonts);
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.side-menu__documents-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.side-menu__back {
+  margin-top: 25px;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  font-family: var(--text-fonts);
+  font-size: 18px;
+
+  align-self: flex-start;
+}
