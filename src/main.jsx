@@ -11,7 +11,7 @@ import "./styles/animations.css";
 import "./styles/headerMenu.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/avtoshkola-avtoprestige">
+  <BrowserRouter basename="/avtoshkola">
     <App />
   </BrowserRouter>,
 );
